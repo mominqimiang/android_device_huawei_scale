@@ -104,9 +104,6 @@ BOARD_SUPPRESS_SECURE_ERASE := true
 TW_INCLUDE_CRYPTO := true
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBA_8888"
 TW_NO_SCREEN_TIMEOUT := true
-# Include tzdata for recovery
-#PRODUCT_COPY_FILES += \
-#    bionic/libc/zoneinfo/tzdata:recovery/root/system/usr/share/zoneinfo/tzdata
 endif
 
 # RIL
@@ -121,16 +118,6 @@ USE_SENSOR_MULTI_HAL := true
 
 # Wifi
 TARGET_PROVIDES_WCNSS_QMI := true
-
-# dexopt
-#ifeq ($(HOST_OS),linux)
-#    ifeq ($(TARGET_BUILD_VARIANT),user)
-#        ifeq ($(WITH_DEXPREOPT),)
-#            WITH_DEXPREOPT := true
-#            WITH_DEXPREOPT_BOOT_IMG_ONLY ?= true
-#        endif
-#    endif
-#endif
 
 # inherit from the proprietary version
 -include vendor/huawei/msm8909-common/BoardConfigVendor.mk
