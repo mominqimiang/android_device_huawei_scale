@@ -1,14 +1,14 @@
-# Audio
-vendor/lib/libacdbloader.so
-
 # Camera
 bin/mm-qcamera-daemon
 lib/libdmd_report.so
+lib/liboeminfo.so
 lib/libmmcamera_interface.so
-lib/libmmjpeg_interface.so
-lib/libqdMetaData.so
-lib/libqomx_core.so
+lib/libmm-qcamera.so
+vendor/lib/libqc-opt.so
+vendor/lib/libjpegdhw.so
+vendor/lib/libjpegehw.so
 vendor/lib/libmmcamera2_c2d_module.so
+vendor/lib/libmmcamera2_cpp_module.so
 vendor/lib/libmmcamera2_frame_algorithm.so
 vendor/lib/libmmcamera2_iface_modules.so
 vendor/lib/libmmcamera2_imglib_modules.so
@@ -18,35 +18,48 @@ vendor/lib/libmmcamera2_pproc_modules.so
 vendor/lib/libmmcamera2_sensor_modules.so
 vendor/lib/libmmcamera2_stats_algorithm.so
 vendor/lib/libmmcamera2_stats_modules.so
+vendor/lib/libmmcamera2_vpe_module.so
 vendor/lib/libmmcamera2_wnr_module.so
 vendor/lib/libmmcamera_faceproc.so
+vendor/lib/libmmcamera_hdr_gb_lib.so
+vendor/lib/libmmcamera_hdr_lib.so
+vendor/lib/libmmcamera_imglib.so
+vendor/lib/libmmcamera_tuning.so
+vendor/lib/libmmcamera_wavelet_lib.so
+vendor/lib/libmmcamera_tintless_algo.so
+vendor/lib/libmmcamera_tintless_bg_pca_algo.so
+vendor/lib/libmmipl.so
+vendor/lib/libmmjpeg.so
+vendor/lib/libmmqjpeg_codec.so
 vendor/lib/liboemcamera.so
+vendor/lib/libqcamerasvr-c++.so
+vendor/lib/libqomx_jpegenc.so
 
 # Camera actuator
+vendor/lib/libactuator_dw9714.so
+vendor/lib/libactuator_dw9714_13p1ba.so
 vendor/lib/libactuator_dw9714_13p1ba_camcorder.so
 vendor/lib/libactuator_dw9714_13p1ba_camera.so
-vendor/lib/libactuator_dw9714_13p1ba.so
 vendor/lib/libactuator_dw9714_camcorder.so
 vendor/lib/libactuator_dw9714_camera.so
+vendor/lib/libactuator_dw9714_pc0fe.so
 vendor/lib/libactuator_dw9714_pc0fe_camcorder.so
 vendor/lib/libactuator_dw9714_pc0fe_camera.so
-vendor/lib/libactuator_dw9714_pc0fe.so
+vendor/lib/libactuator_dw9714_q13n04a.so
 vendor/lib/libactuator_dw9714_q13n04a_camcorder.so
 vendor/lib/libactuator_dw9714_q13n04a_camera.so
-vendor/lib/libactuator_dw9714_q13n04a.so
+vendor/lib/libactuator_dw9714_q13v04b.so
 vendor/lib/libactuator_dw9714_q13v04b_camcorder.so
 vendor/lib/libactuator_dw9714_q13v04b_camera.so
-vendor/lib/libactuator_dw9714_q13v04b.so
-vendor/lib/libactuator_dw9714.so
+vendor/lib/libactuator_imx219_liteon_3bab17.so
 vendor/lib/libactuator_imx219_liteon_3bab17_camcorder.so
 vendor/lib/libactuator_imx219_liteon_3bab17_camera.so
-vendor/lib/libactuator_imx219_liteon_3bab17.so
+vendor/lib/libactuator_imx219_ofilm_ohw8a04.so
 vendor/lib/libactuator_imx219_ofilm_ohw8a04_camcorder.so
 vendor/lib/libactuator_imx219_ofilm_ohw8a04_camera.so
-vendor/lib/libactuator_imx219_ofilm_ohw8a04.so
+vendor/lib/libactuator_ov8858_foxconn_sc1102.so
 vendor/lib/libactuator_ov8858_foxconn_sc1102_camcorder.so
 vendor/lib/libactuator_ov8858_foxconn_sc1102_camera.so
-vendor/lib/libactuator_ov8858_foxconn_sc1102.so
 
 # Camera chromatix
 vendor/lib/libchromatix_gc2355_ofilm_ohw2f03_common.so
@@ -93,6 +106,12 @@ vendor/lib/libchromatix_s5k4e1_foxconn_dc0301a_default_video.so
 vendor/lib/libchromatix_s5k4e1_foxconn_dc0301a_preview.so
 vendor/lib/libchromatix_s5k4e1_foxconn_dc0301a_snapshot.so
 
+# Camera firmware
+etc/firmware/cpp_firmware_v1_1_1.fw
+etc/firmware/cpp_firmware_v1_1_6.fw
+etc/firmware/cpp_firmware_v1_2_0.fw
+etc/firmware/cpp_firmware_v1_4_0.fw
+
 # Camera sensors
 vendor/lib/libmmcamera_gc2355_ofilm_ohw2f03.so
 vendor/lib/libmmcamera_hi256.so
@@ -110,16 +129,66 @@ vendor/lib/libmmcamera_sunny_q13v04b_eeprom.so
 vendor/lib/libmmcamera_sunrise_pc0fe_eeprom.so
 vendor/lib/libmmcamera_truly_cm7700_eeprom.so
 
-# Venus (media) firmware
-etc/firmware/venus.b00
-etc/firmware/venus.b01
-etc/firmware/venus.b02
-etc/firmware/venus.b03
-etc/firmware/venus.b04
-etc/firmware/venus.mbn
-etc/firmware/venus.mdt
+# Qualcomm framework
+bin/irsc_util
+bin/oeminfo_server
+etc/data/dsi_config.xml
+etc/data/netmgr_config.xml
+-lib/libhuawei_secure.so
+-lib/liboeminfo_oem_api.so
+lib/libqmi_nv_api.so
+-lib/libqmi_oem_api.so
+vendor/lib/libdiag.so
+vendor/lib/libdsi_netctrl.so
+vendor/lib/libdsutils.so
+vendor/lib/libidl.so
+vendor/lib/libqcci_legacy.so
+vendor/lib/libqdi.so
+vendor/lib/libqdp.so
+vendor/lib/libqmi_cci.so
+vendor/lib/libqmi_client_helper.so
+vendor/lib/libqmi_client_qmux.so
+vendor/lib/libqmi_common_so.so
+vendor/lib/libqmi_csi.so
+vendor/lib/libqmi_encdec.so
+vendor/lib/libqmiservices.so
+vendor/lib/libqmi.so
+vendor/lib/libsmemlog.so
+
+# Radio
+-app/shutdownlistener/shutdownlistener.apk
+bin/netmgrd
+bin/qmuxd
+bin/radish
+bin/rmt_storage
+etc/ons.bin
+etc/permissions/qcnvitems.xml
+etc/permissions/qcrilhook.xml
+framework/qcnvitems.jar
+framework/qcrilhook.jar
+-priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+vendor/lib/libconfigdb.so
+vendor/lib/libmdmdetect.so
+vendor/lib/libnetmgr.so
+vendor/lib/libperipheral_client.so
+vendor/lib/libril-qc-qmi-1.so
+vendor/lib/libril-qcril-hook-oem.so
+vendor/lib/libsystem_health_mon.so
+vendor/lib/libxml.so
+
+# Sensors
+vendor/etc/pdc_G620s_L01.txt
+vendor/lib/libcalmodule_akm.so
+vendor/lib/libcalmodule_gyroscope.so
 
 # Huawei
 bin/libqmi_oem_main
 bin/rmt_oeminfo
 bin/hw_test_diag
+etc/firmware/SCALE_fts_fw.bin
+etc/firmware/SCALE_fw.bin
+etc/firmware/SCALE_novatek_fw.bin
+etc/firmware/SCALE_tianma_fw.img
+etc/firmware/Y538_fw.bin
+etc/firmware/leia_pfp_470.fw
+etc/firmware/leia_pm4_470.fw
