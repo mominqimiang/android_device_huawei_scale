@@ -1,9 +1,9 @@
 # Camera
-bin/mm-qcamera-daemon
-lib/libdmd_report.so
-lib/liboeminfo.so
-lib/libmmcamera_interface.so
-lib/libmm-qcamera.so
+bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon
+lib/libdmd_report.so:vendor/lib/libdmd_report.so
+lib/liboeminfo.so:vendor/lib/liboeminfo.so
+lib/libmmcamera_interface.so:vendor/lib/libmmcamera_interface.so
+lib/libmm-qcamera.so:vendor/lib/libmm-qcamera.so
 vendor/lib/libqc-opt.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegehw.so
@@ -107,10 +107,10 @@ vendor/lib/libchromatix_s5k4e1_foxconn_dc0301a_preview.so
 vendor/lib/libchromatix_s5k4e1_foxconn_dc0301a_snapshot.so
 
 # Camera firmware
-etc/firmware/cpp_firmware_v1_1_1.fw
-etc/firmware/cpp_firmware_v1_1_6.fw
-etc/firmware/cpp_firmware_v1_2_0.fw
-etc/firmware/cpp_firmware_v1_4_0.fw
+etc/firmware/cpp_firmware_v1_1_1.fw:vendor/etc/firmware/cpp_firmware_v1_1_1.fw
+etc/firmware/cpp_firmware_v1_1_6.fw:vendor/etc/firmware/cpp_firmware_v1_1_6.fw
+etc/firmware/cpp_firmware_v1_2_0.fw:vendor/etc/firmware/cpp_firmware_v1_2_0.fw
+etc/firmware/cpp_firmware_v1_4_0.fw:vendor/etc/firmware/cpp_firmware_v1_4_0.fw
 
 # Camera sensors
 vendor/lib/libmmcamera_gc2355_ofilm_ohw2f03.so
@@ -130,14 +130,14 @@ vendor/lib/libmmcamera_sunrise_pc0fe_eeprom.so
 vendor/lib/libmmcamera_truly_cm7700_eeprom.so
 
 # Qualcomm framework
-bin/irsc_util
-bin/oeminfo_server
-etc/data/dsi_config.xml
-etc/data/netmgr_config.xml
--lib/libhuawei_secure.so
--lib/liboeminfo_oem_api.so
-lib/libqmi_nv_api.so
--lib/libqmi_oem_api.so
+bin/irsc_util:vendor/bin/irsc_util
+bin/oeminfo_server:vendor/bin/oeminfo_server
+etc/data/dsi_config.xml:vendor/etc/data/dsi_config.xml
+etc/data/netmgr_config.xml:vendor/etc/data/netmgr_config.xml
+-lib/libhuawei_secure.so:vendor/lib/libhuawei_secure.so
+-lib/liboeminfo_oem_api.so:vendor/lib/liboeminfo_oem_api.so
+lib/libqmi_nv_api.so:vendor/lib/libqmi_nv_api.so
+-lib/libqmi_oem_api.so:vendor/lib/libqmi_oem_api.so
 vendor/lib/libdiag.so
 vendor/lib/libdsi_netctrl.so
 vendor/lib/libdsutils.so
@@ -156,17 +156,17 @@ vendor/lib/libqmi.so
 vendor/lib/libsmemlog.so
 
 # Radio
--app/shutdownlistener/shutdownlistener.apk
-bin/netmgrd
-bin/qmuxd
-bin/radish
-bin/rmt_storage
-etc/ons.bin
-etc/permissions/qcnvitems.xml
-etc/permissions/qcrilhook.xml
-framework/qcnvitems.jar
-framework/qcrilhook.jar
--priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+-app/shutdownlistener/shutdownlistener.apk:vendor/app/shutdownlistener/shutdownlistener.apk
+bin/netmgrd:vendor/bin/netmgrd
+bin/qmuxd:vendor/bin/qmuxd
+bin/radish:vendor/bin/radish
+bin/rmt_storage:vendor/bin/rmt_storage
+etc/ons.bin:vendor/etc/ons.bin
+etc/permissions/qcnvitems.xml:vendor/etc/permissions/qcnvitems.xml
+etc/permissions/qcrilhook.xml:vendor/etc/permissions/qcrilhook.xml
+framework/qcnvitems.jar:vendor/framework/qcnvitems.jar
+framework/qcrilhook.jar:vendor/framework/qcrilhook.jar
+-priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk:vendor/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/lib/libconfigdb.so
 vendor/lib/libmdmdetect.so
 vendor/lib/libnetmgr.so
@@ -182,13 +182,13 @@ vendor/lib/libcalmodule_akm.so
 vendor/lib/libcalmodule_gyroscope.so
 
 # Huawei
-bin/libqmi_oem_main
-bin/rmt_oeminfo
-bin/hw_test_diag
-etc/firmware/SCALE_fts_fw.bin
-etc/firmware/SCALE_fw.bin
-etc/firmware/SCALE_novatek_fw.bin
-etc/firmware/SCALE_tianma_fw.img
-etc/firmware/Y538_fw.bin
-etc/firmware/leia_pfp_470.fw
-etc/firmware/leia_pm4_470.fw
+bin/libqmi_oem_main:vendor/bin/libqmi_oem_main
+bin/rmt_oeminfo:vendor/bin/rmt_oeminfo
+bin/hw_test_diag:vendor/bin/hw_test_diag
+etc/firmware/SCALE_fts_fw.bin:vendor/etc/firmware/SCALE_fts_fw.bin
+etc/firmware/SCALE_fw.bin:vendor/etc/firmware/SCALE_fw.bin
+etc/firmware/SCALE_novatek_fw.bin:vendor/etc/firmware/SCALE_novatek_fw.bin
+etc/firmware/SCALE_tianma_fw.img:vendor/etc/firmware/SCALE_tianma_fw.img
+etc/firmware/Y538_fw.bin:vendor/etc/firmware/Y538_fw.bin
+etc/firmware/leia_pfp_470.fw:vendor/etc/firmware/leia_pfp_470.fw
+etc/firmware/leia_pm4_470.fw:vendor/etc/firmware/leia_pm4_470.fw
